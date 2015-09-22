@@ -13,6 +13,7 @@ body {
 }
 
 .nav_bar {
+	z-index: 500;
 	position: fixed;
 	width: 100%;
 	height: 40px;
