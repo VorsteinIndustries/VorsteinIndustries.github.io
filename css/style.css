@@ -63,6 +63,9 @@ body {
 	
 }
 
+#sponge {
+	float: right;
+}
 .bio_image img {
 	top: 80px;
 	position: relative;
