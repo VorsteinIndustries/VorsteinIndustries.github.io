@@ -25,7 +25,7 @@ $(document).ready(function(){
     	$nav_menu.stop().animate({ "font-size": "22px" }, 500);
     	$nav_bar.stop().animate({ "height": "45px" }, 500);
 	}, function() {
-    	$nav_menu.stop().animate({ "font-size": "20px" }, 500);
+    	$nav_menu.stop().animate({ "font-size": "21px" }, 500);
     	$nav_bar.stop().animate({ "height": "40px" }, 500);
 	});
 
@@ -35,12 +35,12 @@ $(document).ready(function(){
 	    $.data(this, 'scrollTimer', setTimeout(function() {
         	$scrolling = false;
         	console.log("hasn't scrolled for 600 ms");
-        	$nav_menu.stop().animate({ "font-size": "20px" }, 500);
+        	$nav_menu.stop().animate({ "font-size": "21px" }, 500);
     		$nav_bar.stop().animate({ "height": "40px" }, 500);
     	}, 600));
     	if ($scrolling == true){
     		console.log("is scrolling");
-    		$nav_menu.stop().animate({ "font-size": "19px" }, 500);
+    		$nav_menu.stop().animate({ "font-size": "20px" }, 500);
     		$nav_bar.stop().animate({ "height": "38px" }, 500);
     	} else {
     		console.log("is not scrolling");
@@ -54,14 +54,14 @@ $(document).ready(function(){
 	$bob_img.click(function(){
 		if (!is_shown_bob ) {
 			
-			$bob_info.slideDown();
+			$bob_info.fadeIn('200');
 			is_shown_bob  = true;
 			if(is_shown_sponge) {
-				$sponge_info.slideUp();
+				$sponge_info.hide();
 				is_shown_sponge  = false;
 			}
 		} else {
-			$bob_info.slideUp();
+			$bob_info.hide();
 			is_shown_bob  = false;
 		}
 		
@@ -73,14 +73,14 @@ $(document).ready(function(){
 	$sponge_img.click(function(){
 		if (!is_shown_sponge ) {
 			
-			$sponge_info.slideDown();
+			$sponge_info.fadeIn('200');
 			is_shown_sponge  = true;
 			if (is_shown_bob) {
-				$bob_info.slideUp();
+				$bob_info.hide();
 				is_shown_bob  = false;
 			}
 		} else {
-			$sponge_info.slideUp();
+			$sponge_info.hide();
 			is_shown_sponge  = false;
 		}
 		
