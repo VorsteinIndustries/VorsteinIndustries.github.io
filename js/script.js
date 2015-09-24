@@ -4,22 +4,9 @@ $(document).ready(function(){
 	
 	var nav_menu_shown = true;
 	var $nav_menu = $("#categories");
-	var $nav_arrow = $(".nav_pic");
 	var $nav_bar = $(".nav_bar")
 	var $scrolling = false;
 	
-	$nav_arrow.click(function(){
-		if(nav_menu_shown == true){
-			$nav_menu.animate({width:'toggle'},1000);
-			console.log("clicked on nav_arrow");
-			nav_menu_shown = false;
-		}
-		else if(nav_menu_shown == false){
-			$nav_menu.show();
-			console.log("clicked on nav_arrow");
-			nav_menu_shown = true;
-		}
-	});
 
 	$nav_bar.hover(function() {
     	$nav_menu.stop().animate({ "font-size": "22px" }, 500);
