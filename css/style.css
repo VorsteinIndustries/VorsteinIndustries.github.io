@@ -61,6 +61,7 @@ body {
 	top: 150px;
 	position: relative;
 	width: 350px;
+	height: 350px;
 }
 .bio_info  {
 	float: left;
@@ -73,6 +74,8 @@ body {
 }
 .bio_info img {
 	float: left;
+	width: 500px;
+	height: 500px;
 	margin-left: 125px;
 	margin-top: 25px;
 }
