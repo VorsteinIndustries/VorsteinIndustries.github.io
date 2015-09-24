@@ -80,6 +80,7 @@ body {
 	margin-top: 25px;
 }
 .bio_info  .info_name {
+	font-family: "EB Garamond";
 	float: left;
 	margin-top: 20px;
 	margin-bottom: 0px;
@@ -88,6 +89,7 @@ body {
 	font-weight: bold;
 }
 .bio_info .info_box {
+	font-family: "EB Garamond";
 	float: right;
 	height: 300px;
 	width: 1000px;
@@ -96,6 +98,6 @@ body {
 	margin-bottom: 100px;
 	border-width: 5px;
 	border-style: solid;
-	background: lightblue;
+	background: white;
 	text-align: center;
 }
