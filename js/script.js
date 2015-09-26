@@ -35,13 +35,14 @@ $(document).ready(function(){
     	}
 	});
 
-	var $bob_info = $('#bob_info');
-	var $bob_img  = $('#bob');
+	var $bob_img  = $('#cyrus');
+	var $bob_info = $('#cyrus_info');
+	
 	var is_shown_bob  = false;
 	$bob_img.click(function(){
-		if (!is_shown_bob ) {
-			
+		if (!is_shown_bob ) {	
 			$bob_info.fadeIn('200');
+			window.scrollTo(0, 800);
 			is_shown_bob  = true;
 			if(is_shown_sponge) {
 				$sponge_info.hide();
@@ -54,13 +55,14 @@ $(document).ready(function(){
 		
 	});
 	
-	var $sponge_img  = $('#sponge');
-	var $sponge_info = $('#sponge_info');
+	var $sponge_img  = $('#greg');
+	var $sponge_info = $('#greg_info');
 	var is_shown_sponge  = false;
 	$sponge_img.click(function(){
 		if (!is_shown_sponge ) {
 			
 			$sponge_info.fadeIn('200');
+			window.scrollTo(0, 800);
 			is_shown_sponge  = true;
 			if (is_shown_bob) {
 				$bob_info.hide();

@@ -8,14 +8,12 @@
 body {
 	margin: 0;
 	font-size: 21px;
-	background: url('../image/light_blue_background.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background: #eefefe;
 	height: 1080px;
 	
 }
 
-.nav_bar {
+.nav_bar {	
 	font-family: "EB Garamond";
 	z-index: 500;
 	position: fixed;
@@ -23,13 +21,12 @@ body {
 	height: 40px;
 	background-color: white;
 	padding-top: 24px;
-	border-bottom: 2px solid #000000;
 	opacity: .93;
+	box-shadow: 4px 4px 15px #bbbbbb;
 
 }
  
 
- 
 .nav_categories ul li a {
 	margin-left: 120px;	
 	text-decoration: none;
@@ -41,74 +38,57 @@ body {
 	color: white;
 }
 
-#categories { display:table; margin-left: 0px;} 
-#categories li { display:table-cell; padding: 0px 10px; opacity: 1;}
-
-#logo {
-	float: left;
-	height: 35px;
-	width: 100px;
-	padding-left: 225px;
-	padding-top: 0px;
-	margin-bottom: 20px;
+#categories {  
+	display:	 table; 
+	margin-left: 280px;
 } 
-
-.container {
-	position: relative;
+#categories li { 
+	display: table-cell; 
+	padding: 0px 10px; 
+	opacity: 1;
 }
 
-#sponge {
-	float: right;
-	margin-right: 200px;
-}
-#bob {
-	float: left;
-	margin-left: 200px;
-}
 .bio_image img {
-	border-width: 2px;
-	border-style: solid;
-	float: left;
-	top: 150px;
-	position: relative;
-	width: 350px;
-	height: 350px;
+	box-shadow: 4px 4px 15px #bbbbbb;
+	float: 		left;
+	margin-top: 250px;
+	width: 		450px;
+	height: 	450px;
+}
+#greg {
+	float: 		  right;
+	margin-right: 250px;
+}
+#cyrus{
+	float: 		 left;
+	margin-left: 250px;
 }
 .bio_info  {
-	float: left;
-	bottom: 10px;
-	position: relative;
-	z-index: -1;
-	margin-top: 180px;
-	height: 500px;
-	display: none;
+	float: 		left;
+	margin-top: 45px;
+	height: 	700px;
+	display: 	none;
+	background: white;
 }
-.bio_info img {
-	float: left;
-	width: 500px;
-	height: 500px;
-	margin-left: 125px;
-	margin-top: 25px;
+.bio_info img {	
+	width: 		500px;
+	height: 	500px;
+	margin: 	50px 0px 0px 200px;
+	box-shadow: 4px 4px 15px #bbbbbb;
 }
 .bio_info  .info_name {
-	font-family: "EB Garamond";
-	float: left;
-	margin-top: 20px;
-	margin-bottom: 0px;
-	margin-left: 275px;
-	font-size: 24px;
-	font-weight: bold;
+	font-family: "Jura:400,500";
+	float: 		 left;
+	margin: 	 20px 0px 0px 360px;
+	font-size:   30px;
 }
 .bio_info .info_box {
 	font-family: "EB Garamond";
-	float: right;
-	height: 300px;
-	width: 1000px;
-	margin-top: 175px;
-	margin-right: 150px;
-	margin-bottom: 100px;
-	border-width: 5px;
-	border-style: solid;
-	background: white;
-	text-align: center;
+	float:  	 right;
+	height: 	 300px;
+	width:  	 850px;
+	margin: 	 175px 150px 100px 0px;
+	background:  #eeeeee;
+	text-align:  center;
+	box-shadow:  4px 4px 15px #bbbbbb;
 }
