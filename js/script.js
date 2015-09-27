@@ -1,25 +1,31 @@
-
-
 $(document).ready(function(){
+	
+	factor_x = ($(window).width())  / 1980;
+	factor_y = ($(window).height()) / 1080;
+
+	$('html').css("transform","scale("+factor_x+","+factor_y+")");  
+	//For Firefox
+	$('html').css("-moz-transform","scale("+factor_x+","+factor_y+")"); 
+	      
+	//For Google Chrome
+	$('html').css("-webkit-transform","scale("+factor_x+","+factor_y+")");
+
+	//For Opera
+	$('html').css("-o-transform","scale("+factor_x+","+factor_y+")");
+	
 	
 	var nav_menu_shown = true;
 	var $nav_menu = $("#categories");
 	var $nav_bar = $(".nav_bar")
 	var $scrolling = false;
-	var screenHeight = screen.height;
 	
-	if (screenHeight < 800) {
-	  $('body').css('zoom', 0.8);
-	} else {
-	     $('body').css('zoom', 1);
-	}
 
 	$nav_bar.hover(function() {
-    	$nav_menu.stop().animate({ "font-size": "17pt" }, 500);
-    	$nav_bar.stop().animate({ "height": "5.5%" }, 500);
+    	$nav_menu.stop().animate({ "font-size": "23px" }, 500);
+    	$nav_bar.stop().animate({ "height": "45px" }, 500);
 	}, function() {
-    	$nav_menu.stop().animate({ "font-size": "16pt" }, 500);
-    	$nav_bar.stop().animate({ "height": "5%" }, 500);
+    	$nav_menu.stop().animate({ "font-size": "22px" }, 500);
+    	$nav_bar.stop().animate({ "height": "40px" }, 500);
 	});
 
 	$(window).scroll(function() {
@@ -28,15 +34,16 @@ $(document).ready(function(){
 	    $.data(this, 'scrollTimer', setTimeout(function() {
         	$scrolling = false;
         	console.log("hasn't scrolled for 600 ms");
-        	$nav_menu.stop().animate({ "font-size": "16pt" }, 500);
-    		$nav_bar.stop().animate({ "height": "5%" }, 500);
-    	}, 200));
+        	$nav_menu.stop().animate({ "font-size": "22px" }, 500);
+    		$nav_bar.stop().animate({ "height": "40px" }, 500);
+    	}, 600));
     	if ($scrolling == true){
     		console.log("is scrolling");
-    		$nav_menu.stop().animate({ "font-size": "15pt" }, 500);
-    		$nav_bar.stop().animate({ "height": "4.5%" }, 500);
+    		$nav_menu.stop().animate({ "font-size": "21px" }, 500);
+    		$nav_bar.stop().animate({ "height": "38px" }, 500);
     	} else {
     		console.log("is not scrolling");
+    		
     	}
 	});
 
